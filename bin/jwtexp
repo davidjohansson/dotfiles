@@ -1,0 +1,1 @@
+echo $1 | jwt-decode-json | jq '. | {exp: .exp | todate, iat: .iat | todate, auth_time: .auth_time | todate}'

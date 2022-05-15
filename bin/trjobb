@@ -1,0 +1,1 @@
+~/kod/trello-cli/bin/trello add-card -b Jobb -l Backlog "$1" "$2"

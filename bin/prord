@@ -1,0 +1,1 @@
+curl -X 'POST' 'https://sales-k8s.bt1.tre.se/mom-engine/graphql' -H 'accept: application/json' --header "Content-Type: application/json" --data '{"variables":null,"query":"query searchProductOrders($orderReference: String, $erpId: String) {\n searchProductOrders(orderReference: $orderReference, erpId: $erpId) {\n orderReference\n }\n}"}'

@@ -1,0 +1,42 @@
+{
+  "terminal.explorerKind" : "external",
+  "security.workspace.trust.untrustedFiles" : "open",
+  "[json]" : {
+    "editor.defaultFormatter" : "vscode.json-language-features"
+  },
+  "workbench.colorTheme" : "Visual Studio Light",
+  "files.exclude" : {
+    "**\/.project" : true,
+    "**\/.settings" : true,
+    "**\/.classpath" : true,
+    "**\/.factorypath" : true
+  },
+  "vscode-neovim.neovimExecutablePaths.darwin" : "\/usr\/local\/bin\/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin" : "\/Users\/johansson044\/.dotfiles\/config\/nvim\/init.vim",
+  "vsintellicode.modify.editor.suggestSelection" : "automaticallyOverrodeDefaultValue",
+  "[jsonc]" : {
+    "editor.defaultFormatter" : "vscode.json-language-features"
+  },
+  "editor.accessibilitySupport" : "off",
+  "java.project.importOnFirstTimeStartup" : "automatic",
+  "[javascript]" : {
+    "editor.defaultFormatter" : "esbenp.prettier-vscode"
+  },
+  "java.jdt.ls.vmargs" : "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"\/Users\/johansson044\/.vscode\/extensions\/gabrielbb.vscode-lombok-1.0.1\/server\/lombok.jar\"",
+  "[html]" : {
+    "editor.defaultFormatter" : "vscode.html-language-features"
+  },
+  "editor.suggestSelection" : "first",
+  "workbench.activityBar.visible" : true,
+  "workbench.statusBar.visible" : true,
+  "[typescript]" : {
+    "editor.defaultFormatter" : "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled" : false,
+  "[typescriptreact]" : {
+    "editor.defaultFormatter" : "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  }
+}

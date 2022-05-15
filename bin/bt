@@ -1,0 +1,4 @@
+service=$1
+environment=$2
+env="${environment:-bt1}"
+buku -f10 -t "t${service}" + tre + ${env}

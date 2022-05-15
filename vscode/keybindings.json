@@ -1,0 +1,46 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    // Toggle between terminal and editor focus
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.tasks.reRunTask"
+    },
+    {
+        "key": "ctrl+alt+cmd+s",
+        "command": "workbench.action.tasks.reRunTask"
+    },
+    //CTRL-r för reverse I-search i terminalen
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0012"
+        },
+        "when": "terminalFocus"
+    }
+]
