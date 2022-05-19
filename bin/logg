@@ -1,0 +1,10 @@
+#!/bin/bash
+
+P="$HOME/Google\ Drive/Tre/z"
+DATE=$(date +%F)
+FILENAME="${P}/${DATE}_$1.md"
+
+echo $FILENAME
+eval touch $FILENAME
+eval nvim $FILENAME
+

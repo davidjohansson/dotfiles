@@ -1,5 +1,4 @@
 # remap prefix from 'C-b' to 'C-a'
-#set -g prefix C-a
 #unbind C-b
 #bind C-a send-prefix
 unbind C-b
@@ -28,7 +27,6 @@ bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pb
 bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "pbcopy"
 
 set -g @colors-solarized 'dark'
-
 
 #### COLOUR (Solarized 256)
 
