@@ -1,11 +1,13 @@
 
 # Davids stuff
-export DOOER_FAVRO_CREDENTIALS=david.johansson@dooer.com:3Fcv-s_HHIwifZUaAySLKlwbY4kbJJN2e0WQO1H3tHW
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
 NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
 export NODE_ICU_DATA
 source "$HOME/kod/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
+export EDITOR=/usr/local/bin/nvim
+
+export PATH=/Users/david/kod/zet/script:$PATH
 
 
 
