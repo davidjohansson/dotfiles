@@ -25,3 +25,5 @@ tscommand*.txt
 # npm things
 npm-debug.log
 application-johansson044.yml
+application-johansson044.yaml
+**/.java_version

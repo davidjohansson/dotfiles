@@ -1,0 +1,4 @@
+
+tmux new-session \; \
+  split-window -h \; \
+  send-keys 'nvim' C-m \; 

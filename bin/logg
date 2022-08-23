@@ -1,10 +1,4 @@
 #!/bin/bash
+zx-log.mjs $1 | xargs -I {} nvim {} -c "set nospell" -c ":Goyo" -c "colorscheme seoul256"
 
-P="$HOME/Google\ Drive/Tre/z"
-DATE=$(date +%F)
-FILENAME="${P}/${DATE}_$1.md"
-
-echo $FILENAME
-eval touch $FILENAME
-eval nvim $FILENAME
 

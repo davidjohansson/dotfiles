@@ -11,8 +11,8 @@
     "**\/.classpath" : true,
     "**\/.factorypath" : true
   },
-  "vscode-neovim.neovimExecutablePaths.darwin" : "\/usr\/local\/bin\/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin" : "\/Users\/johansson044\/.dotfiles\/config\/nvim\/init.vim",
+  "vscode-neovim.neovimExecutablePaths.darwin" : "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin" : "/Users/johansson044/.dotfiles/config/nvim/init.lua",
   "vsintellicode.modify.editor.suggestSelection" : "automaticallyOverrodeDefaultValue",
   "[jsonc]" : {
     "editor.defaultFormatter" : "vscode.json-language-features"
@@ -36,7 +36,4 @@
   "[typescriptreact]" : {
     "editor.defaultFormatter" : "esbenp.prettier-vscode"
   },
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  }
 }

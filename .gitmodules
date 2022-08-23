@@ -1,3 +1,15 @@
 [submodule "neovim"]
 	path = neovim
 	url = git@github.com:davidjohansson/neovim-config.git
+[submodule "iterm2/themes"]
+	path = iterm2/themes
+	url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
+[submodule "zsh/powerlevel10k"]
+	path = zsh/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "iterm2/seoultheme"]
+	path = iterm2/seoultheme
+	url = git@github.com:mikker/seoul256-iTerm.git
+[submodule "intellij/themes/seoultheme"]
+	path = intellij/themes/seoultheme
+	url = git@github.com:jslim89/seoul256.vim.git

@@ -1,5 +1,5 @@
+
 # Davids stuff
-export DOOER_FAVRO_CREDENTIALS=david.johansson@dooer.com:3Fcv-s_HHIwifZUaAySLKlwbY4kbJJN2e0WQO1H3tHW
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
 NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
@@ -7,10 +7,24 @@ export NODE_ICU_DATA
 source "$HOME/kod/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
 
 
-
 export PATH=/Users/david/bin:$PATH
 export PATH=/Users/johansson044/kod/h2docker:$PATH
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/Users/johansson044/kod/zet/script/:$PATH"
 
+export ZETTELKASTEN_DIR=$HOME/zettelkasten/
+
+
+#symlinks
+export CDPATH=$DOTFILES/symlinks
+
+#iterm path in tab title
+DISABLE_AUTO_TITLE="true"
+
+precmd() {
+  # sets the tab title to current dir
+  echo -ne "\e]1;${PWD##*/}\a"
+}
 
 # display how long all tasks over 10 seconds take
 export REPORTTIME=10
@@ -23,17 +37,27 @@ if [[ -d ~/code ]]; then
     export CODE_DIR=~/code
 fi
 
+#THEME
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+source ~/.dotfiles/zsh/powerlevel10k/powerlevel10k.zsh-theme
+
 # source all .zsh files inside of the zsh/ directory
 source "$ZSH/utils.zsh"
-source "$ZSH/prompt.zsh"
+# source "$ZSH/prompt.zsh"
 source "$ZSH/aliases.zsh"
-source "$ZSH/colors.zsh"
+# source "$ZSH/colors.zsh"
 source "$ZSH/completion.zsh"
 source "$ZSH/config.zsh"
 source "$ZSH/functions.zsh"
 source "$ZSH/git.zsh"
 source "$ZSH/tmux.zsh"
 source "$ZSH/z.zsh"
+source "$ZSH/pushds.zsh"
 
 if [[ -a ~/.localrc ]]; then
     source ~/.localrc
@@ -143,3 +167,8 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/bitcomplete bit
 export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

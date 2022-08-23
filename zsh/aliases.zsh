@@ -2,6 +2,7 @@
 alias git='LANG=en_US git'
 alias cl="clear"
 alias msr="mvn spring-boot:run"
+alias mss="mvn spring-boot:start"
 alias xopen="xargs -I {} open {}"
 alias xcurl="xargs -I {} curl -X 'GET' {} -H 'accept: application/json'"
 alias xnmd="xargs nvim '+set nospell'"
@@ -15,7 +16,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
-alias pd="pushd ~/.dotfiles"
 
 alias k="kubectl --kubeconfig ~/.kube/config-bt1 -n sales"
 alias kbt1="kubectl --kubeconfig ~/.kube/config-bt1 -n sales"
