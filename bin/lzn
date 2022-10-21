@@ -1,0 +1,4 @@
+linkTo=$1
+linkFrom=$2
+
+perl -i -plne 'print "['$linkTo'](./'$linkTo')" if(/\#[0-9]{4}-[0-9]{2}-[0-9]{2}/);' $linkFrom
