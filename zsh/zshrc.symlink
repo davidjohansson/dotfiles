@@ -4,7 +4,6 @@ export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
 NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
 export NODE_ICU_DATA
-source "$HOME/kod/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
 
 
 export PATH=/Users/david/bin:$PATH
