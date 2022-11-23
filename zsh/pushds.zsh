@@ -10,7 +10,7 @@ alias pdrb="pushd ~/kod/returns-bff/"
 alias pdej="pushd ~/kod/end-to-end-tests/src/test/javascript/"
 alias pdsc="pushd ~/kod/bottom-drawer/scmd/"
 alias pdcd="pushd ~/kod/cd-kubernetes/"
-alias pdlo="pushd ~/vimwiki/tre/"
+alias pdlo="pushd ~/OneDrive\ -\ Hi3G\ Access\ AB/tre"
 alias pdlsb="pushd ~/kod/sales-bff-treshop-dk"
 alias pdze="pushd ${ZETTELKASTEN_DIR}"
 
