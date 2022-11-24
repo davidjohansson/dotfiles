@@ -6,6 +6,13 @@ command_exists() {
 
 echo "Installing dotfiles."
 
+echo "Installing stuff, make sure brew is installed"
+brew install zsh
+brew install tmux
+brew install neovim
+brew install zplug
+
+
 echo "Initializing submodule(s)"
 git submodule update --init --recursive
 
