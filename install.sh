@@ -22,7 +22,7 @@ git submodule update --init --recursive
 source install/link.sh
 source install/neovim.sh
 source install/karabiner.sh
-
+source install/intellij.sh
 
 if ! command_exists zsh; then
     echo "zsh not found. Please install and then re-run installation scripts"
