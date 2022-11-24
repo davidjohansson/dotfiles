@@ -21,6 +21,7 @@ git submodule update --init --recursive
 
 source install/link.sh
 source install/neovim.sh
+source install/karabiner.sh
 
 
 if ! command_exists zsh; then
