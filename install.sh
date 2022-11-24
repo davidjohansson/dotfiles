@@ -11,6 +11,9 @@ brew install zsh
 brew install tmux
 brew install neovim
 brew install zplug
+brew install fzf
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
 
 
 echo "Initializing submodule(s)"
