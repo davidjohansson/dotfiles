@@ -10,7 +10,8 @@
     "**\/.classpath" : true,
     "**\/.factorypath" : true
   },
-  "vscode-neovim.neovimExecutablePaths.darwin" : "/usr/local/bin/nvim",
+
+  "vscode-neovim.neovimExecutablePaths.darwin" : "/opt/homebrew/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.darwin" : "/Users/johansson044/.dotfiles/neovim/init.lua",
   "vsintellicode.modify.editor.suggestSelection" : "automaticallyOverrodeDefaultValue",
   "[jsonc]" : {

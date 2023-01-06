@@ -118,8 +118,8 @@ if [ -z ${RELOAD}  ]; then
     source $ZPLUG_HOME/init.zsh
     zplug 'zplug/zplug', hook-build:'zplug --self-manage'
     zplug 'zsh-users/zsh-syntax-highlighting', defer:2
-#    zplug 'zsh-users/zsh-autosuggestions'
-    export NVM_AUTO_USE=true
+    #zplug 'zsh-users/zsh-autosuggestions'
+    #export NVM_AUTO_USE=true
     # export NVM_NO_USE=true
     zplug 'lukechilds/zsh-nvm'
 

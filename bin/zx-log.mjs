@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 
 $.verbose = false
-const path = `${os.homedir()}/OneDrive/tre`
+const path = `${os.homedir()}/OneDriveTre`
 const date = (await $`date +%F`).stdout.trim()
 
 //massa argument framför nr 4, t ex node o stuff

@@ -67,8 +67,7 @@ store-inventory-frontend
 test2240
 )
 
-# Custom fuzzy completion for "doge" command
-#   e.g. doge **<TAB>
+# Custom fuzzy completion for "scmd" command
 _fzf_complete_scmd() {
   _fzf_complete --multi --reverse --prompt="scmd> " -- "$@" < <(
     
@@ -93,6 +92,25 @@ _fzf_complete_s() {
   )
 
 }
+
+dates(){
+  startdate=20220101
+  enddate=20221231
+
+  for (( date="$startdate"; date != enddate; )); do
+    date="$(date -j -f %Y%m%d -v+1d $date +%Y%m%d)"
+    echo "${date}"
+  done
+}
+
+
+_fzf_complete_timew() {
+  _fzf_complete --multi --reverse --prompt="timew> " -- "$@" < <(
+  dates
+  )
+
+}
+
 
 _fzf_complete_kbt1() {
   _fzf_complete --multi --reverse --prompt="kbt1> " -- "$@" < <(

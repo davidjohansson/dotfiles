@@ -1,6 +1,4 @@
 # remap prefix from 'C-b' to 'C-a'
-#unbind C-b
-#bind C-a send-prefix
 unbind C-b
 set-option -g prefix C-a
 bind-key C-a send-prefix
@@ -14,10 +12,9 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-pain-control'
 set -g @plugin 'seebi/tmux-colors-solarized'
 set -g @plugin 'christoomey/vim-tmux-navigator'
-set-option -g default-command "reattach-to-user-namespace -l zsh"
 
 setw -g mode-keys vi
-set-window-option -g mode-keys vi
+#set-window-option -g mode-keys vi
 
 
 # Copy/paste support for tmux 2.4
@@ -26,41 +23,16 @@ bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
 bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
 bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "pbcopy"
 
-set -g @colors-solarized 'dark'
+#set -g @colors-solarized 'dark'
 
 #### COLOUR (Solarized 256)
 
 # default statusbar colors
-set-option -g status-style fg=colour136,bg=colour235
-#set-option -g status-bg colour235 #base02
-#set-option -g status-fg colour136 #yellow
-#set-option -g status-attr default
-
-# default window title colors
-set-window-option -g window-status-style fg=colour244,bg=default,dim #base0
-
-# active window title colors
-set-window-option -g window-status-current-fg colour166 #orange
-set-window-option -g window-status-current-bg default
-#set-window-option -g window-status-current-attr bright
-
-# pane border
-set-option -g pane-border-fg colour235 #base02
-set-option -g pane-active-border-fg colour240 #base01
-
-# message text
-set-option -g message-bg colour235 #base02
-set-option -g message-fg colour166 #orange
+#set-option -g status-style fg=colour136,bg=colour235
 
 # pane number display
-set-option -g display-panes-active-colour colour33 #blue
-set-option -g display-panes-colour colour166 #orange
-
-# clock
-set-window-option -g clock-mode-colour colour64 #green
-
-# bell
-set-window-option -g window-status-bell-style fg=colour235,bg=colour160 #base02, red
+#set-option -g display-panes-active-colour colour33 #blue
+#set-option -g display-panes-colour colour166 #orange
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
