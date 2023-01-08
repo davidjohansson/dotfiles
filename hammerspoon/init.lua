@@ -6,7 +6,7 @@ hyper = {"ctrl", "alt" ,"shift" ,"cmd"}
 -- Hotkeys to open apps
 spoon.SpoonInstall:andUse("AppLauncher", {
 
-  config = { modifiers = meh} ,
+  config = { modifiers = hyper} ,
   hotkeys = {
     c = "Google Chrome",
     p = "1Password",
@@ -17,14 +17,16 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     d = "dash",
     m = "mail",
     f = "Firefox",
+    x = "dbVisualizer",
+    h = "Hammerspoon",
   }
 })
 
 -- Cycle currently focused window between available srceens
-hs.hotkey.bind(hyper, 'g', function()
+hs.hotkey.bind(meh, 'g', function()
   -- get the focused window
   local win = hs.window.focusedWindow()
-  -- get the screen where the focused window is displayed, a.k.a. current screen
+  -- get the screen where the focusesss window is displayed, a.k.a. current screen
   local screen = win:screen()
   -- compute the unitRect of the focused window relative to the current screen
   -- and move the window to the next screen setting the same unitRect 

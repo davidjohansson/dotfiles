@@ -12,7 +12,7 @@ array=(
 api-mock-server
 bff-elgiganten-se-service
 bff-treshop-dk-hazelcast-service
-bff-treshop-dk-service
+bff-treshop-dk
 bif-logistics-partner
 cart-service
 cartrjmx-service
@@ -93,20 +93,10 @@ _fzf_complete_s() {
 
 }
 
-dates(){
-  startdate=20220101
-  enddate=20221231
-
-  for (( date="$startdate"; date != enddate; )); do
-    date="$(date -j -f %Y%m%d -v+1d $date +%Y%m%d)"
-    echo "${date}"
-  done
-}
-
 
 _fzf_complete_timew() {
   _fzf_complete --multi --reverse --prompt="timew> " -- "$@" < <(
-  dates
+  listDates.clj 
   )
 
 }
