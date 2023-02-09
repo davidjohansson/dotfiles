@@ -19,6 +19,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     f = "Firefox",
     x = "dbVisualizer",
     h = "Hammerspoon",
+    o = "obsidian",
   }
 })
 

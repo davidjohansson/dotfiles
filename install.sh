@@ -12,6 +12,8 @@ brew install tmux
 brew install neovim
 brew install zplug
 brew install fzf
+brew install borkdude/brew/babashka
+
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
 
@@ -23,6 +25,7 @@ source install/link.sh
 source install/neovim.sh
 source install/karabiner.sh
 source install/intellij.sh
+source install/hammerspoon.sh
 
 if ! command_exists zsh; then
     echo "zsh not found. Please install and then re-run installation scripts"

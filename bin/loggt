@@ -1,0 +1,5 @@
+
+tmux new-session \; \
+  split-window -h \; \
+  send-keys "logg $1" C-m \;
+
