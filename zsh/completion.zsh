@@ -80,6 +80,7 @@ _fzf_complete_scmd() {
   )
 
 }
+
 _fzf_complete_s() {
   _fzf_complete --multi --reverse --prompt="s> " -- "$@" < <(
     
@@ -114,3 +115,16 @@ _fzf_complete_kbt1() {
   )
 
 }
+
+
+_fzf_complete_bookmarks() {
+  _fzf_complete --multi --reverse --prompt="b> " -- "$@" < <(
+    
+
+ # buku -p -f 40 | fzf | cut -f1 | xopen
+  buku -p -f 40 
+
+  )
+
+}
+

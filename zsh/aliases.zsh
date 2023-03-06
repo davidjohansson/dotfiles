@@ -32,9 +32,8 @@ alias k9ssu="k9s --kubeconfig ~/.kube/config-support -n delivery"
 alias k9sos="k9s --kubeconfig ~/.kube/config-os -n sales-poc"
 
 alias eg="exa --long --header --inode --git"
-alias b="buku --suggest"
 alias bm="buku -p -f 40 | fzf | cut -f1"
-alias bmo="buku -p -f 40 | fzf | cut -f1 | xopen"
+alias b="buku -p -f 40 | fzf | cut -f1 | xopen"
 alias bmp="buku -p -f 40 | fzf | cut -f1 | tee >(pbcopy)"
 alias bms="buku -p -f 40 | fzf | cut -f1  | swagger | xopen"
 
