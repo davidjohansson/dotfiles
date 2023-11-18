@@ -23,7 +23,7 @@ alias knr="kubectl --kubeconfig ~/.kube/config-nr -n sales"
 alias kpr="kubectl --kubeconfig ~/.kube/config-prd -n sales"
 alias ksu="kubectl --kubeconfig ~/.kube/config-support -n sales"
 alias kos="kubectl --kubeconfig ~/.kube/config-os -n sales-poc"
-alias ocos="oc --config=~/.kube/config-os -n sales-poc"
+alias ocos="oc --kubeconfig=~/.kube/config-os -n sales"
 
 alias k9sbt1="k9s --kubeconfig ~/.kube/config-bt1 -n sales"
 alias k9snr="k9s --kubeconfig ~/.kube/config-nr -n sales"
@@ -37,9 +37,13 @@ alias b="buku -p -f 40 | fzf | cut -f1 | xopen"
 alias bmp="buku -p -f 40 | fzf | cut -f1 | tee >(pbcopy)"
 alias bms="buku -p -f 40 | fzf | cut -f1  | swagger | xopen"
 
-alias disp1="/usr/local/bin/display_manager.py res 2560 1490 60"
 
-alias disp2="/usr/local/bin/display_manager.py res 3360 1890 60"
+alias urldecode='python3 -c "import sys, urllib as ul; \
+    print ul.unquote_plus(sys.argv[1])"'
+
+alias urlencode='python3 -c "import sys, urllib as ul; \
+    print ul.quote_plus(sys.argv[1])"'
+
 
 # reload zsh config
 alias reload!='RELOAD=1 source ~/.zshrc'

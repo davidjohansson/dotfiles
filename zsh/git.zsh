@@ -36,7 +36,7 @@ alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
 alias git='LANG=en_GB git'
-alias glp='git log --pretty=format:"%h - %ad, %ae : %s" --graph'
+alias glp='git log --tags --pretty=format:"%h - %ad, %ae : %s" --graph'
 # ----------------------
 # Git Functions
 # ----------------------

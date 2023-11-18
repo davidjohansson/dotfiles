@@ -10,7 +10,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
   hotkeys = {
     c = "Google Chrome",
     p = "1Password",
-    s = "Microsoft Teams",
+    s = "Microsoft Teams (work or school)",
     t = "iTerm",
     i = "intellij IDEA",
     v = "Visual Studio Code",
@@ -20,6 +20,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     x = "dbVisualizer",
     h = "Hammerspoon",
     o = "obsidian",
+    k = "Anki",
   }
 })
 
