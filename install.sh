@@ -6,6 +6,10 @@ command_exists() {
 
 echo "Installing dotfiles."
 
+
+echo "Soft linking zsch.symlink to root"
+ln -s ~/.dotfiles/zsh/zshrc.symlink ~/.zshrc
+
 echo "Installing stuff, make sure brew is installed"
 brew install zsh
 brew install tmux
@@ -13,6 +17,8 @@ brew install neovim
 brew install zplug
 brew install fzf
 brew install borkdude/brew/babashka
+
+
 
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
@@ -26,6 +32,7 @@ source install/neovim.sh
 source install/karabiner.sh
 source install/intellij.sh
 source install/hammerspoon.sh
+source install/vscode.sh
 
 if ! command_exists zsh; then
     echo "zsh not found. Please install and then re-run installation scripts"

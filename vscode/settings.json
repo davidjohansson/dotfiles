@@ -11,8 +11,8 @@
     "**\/.factorypath" : true
   },
 
-  "vscode-neovim.neovimExecutablePaths.darwin" : "/opt/homebrew/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin" : "/Users/johansson044/.dotfiles/neovim/init.lua",
+  "vscode-neovim.neovimExecutablePaths.darwin" : "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin" : "~/.dotfiles/neovim/init.lua",
   "vsintellicode.modify.editor.suggestSelection" : "automaticallyOverrodeDefaultValue",
   "[jsonc]" : {
     "editor.defaultFormatter" : "vscode.json-language-features"
@@ -22,12 +22,11 @@
   "[javascript]" : {
     "editor.defaultFormatter" : "esbenp.prettier-vscode"
   },
-  "java.jdt.ls.vmargs" : "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"\/Users\/johansson044\/.vscode\/extensions\/gabrielbb.vscode-lombok-1.0.1\/server\/lombok.jar\"",
+  "java.jdt.ls.vmargs" : "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"\/,\~/.vscode\/extensions\/gabrielbb.vscode-lombok-1.0.1\/server\/lombok.jar\"",
   "[html]" : {
     "editor.defaultFormatter" : "vscode.html-language-features"
   },
-  "editor.suggestSelection" : "first",
-  "workbench.activityBar.visible" : true,
+  "editor.suggestSelection": "first",
   "workbench.statusBar.visible" : true,
   "[typescript]" : {
     "editor.defaultFormatter" : "esbenp.prettier-vscode"

@@ -9,7 +9,7 @@ if [ ! -d "$HOME/.config" ]; then
     mkdir -p "$HOME/.config"
 fi
 
-target="$HOME/.config/hammerspoon"
+target="$HOME/.hammerspoon"
 if [ -e "$target" ]; then
   echo "~${target#$HOME} already exists... Skipping."
 else

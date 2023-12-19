@@ -14,7 +14,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     s = "Microsoft Teams classic",
     t = "iTerm",
     i = "intellij IDEA",
-    v = "Visual Studio Code",
+    v = "visual Studio Code",
    --  = "dash",
     d = "discord",
     m = "mail",
