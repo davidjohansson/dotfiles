@@ -38,6 +38,10 @@ alias bmp="buku -p -f 40 | fzf | cut -f1 | tee >(pbcopy)"
 alias bms="buku -p -f 40 | fzf | cut -f1  | swagger | xopen"
 
 
+alias wts="curl wttr.in/stockholm"
+alias wtv="curl wttr.in/västerås"
+
+
 alias urldecode='python3 -c "import sys, urllib as ul; \
     print ul.unquote_plus(sys.argv[1])"'
 
