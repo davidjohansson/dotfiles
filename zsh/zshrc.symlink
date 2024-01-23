@@ -9,12 +9,12 @@ export NODE_ICU_DATA
 export PATH=/Users/david/bin:$PATH
 export PATH=/Users/johansson044/kod/h2docker:$PATH
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="/Users/johansson044/kod/zet/script/:$PATH"
+export PATH="$HOME/kod/zet/script/:$PATH"
 
 export ZETTELKASTEN_DIR=$HOME/zettelkasten/
 
 export FZF_COMPLETION_TRIGGER=',,'
-
+export SSLKEYLOGFILE=~/.ssl-key.log
 
 #symlinks
 export CDPATH=$DOTFILES/symlinks
