@@ -1,0 +1,48 @@
+{
+  "track_total_hits": false,
+  "sort": [
+    {
+      "@timestamp": {
+        "order": "desc",
+        "unmapped_type": "boolean"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "field": "kubernetes.labels.app"
+    },
+    {
+      "field": "logevent.message"
+    }
+  ],
+  "size": 1000,
+  "version": true,
+  "script_fields": {},
+  "stored_fields": ["*"],
+  "runtime_mappings": {},
+  "_source": false,
+  "query": {
+    "bool": {
+      "must": [],
+      "filter": [
+        {
+          "range": {
+            "@timestamp": {
+              "format": "strict_date_optional_time",
+              "gte": "<SET BY SCRIPT>",
+              "lte": "<SET BY SCRIPT>"
+            }
+          }
+        },
+        {
+          "match_phrase": {
+            "logevent.level": "ERROR"
+          }
+        }
+      ],
+      "should": [],
+      "must_not": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "name": "MOM Engine graphql",
+    "schemaPath": "schema-from-engine.graphql",
+    "extensions": {
+        "endpoints": {
+            "dev": {
+                "url": "http://localhost:8087/graphql",
+                "headers": {
+                    "user-agent": "JS GraphQL"
+                },
+                "introspect": true
+            },
+            "bt1": {
+                "url": "https://sales-k8s.bt1.tre.se/mom-engine/graphql",
+                "headers": {
+                    "user-agent": "JS GraphQL"
+                },
+                "introspect": true
+            },
+            "nr": {
+                "url": "https://sales-k8s.nextrel.tre.se/mom-engine/graphql",
+                "headers": {
+                    "user-agent": "JS GraphQL"
+                },
+                "introspect": true
+            },
+
+            "prod": {
+                "url": "https://sales-k8s.tre.se/mom-engine/graphql",
+                "headers": {
+                    "user-agent": "JS GraphQL"
+                },
+                "introspect": true
+            }
+        }
+    }
+}

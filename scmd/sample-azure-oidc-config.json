@@ -1,0 +1,11 @@
+{
+  "id_provider_url": "https://login.microsoftonline.com/",
+  "token_endpoint": "/d3d38dff-f85c-4026-842d-c215eb6b3560/oauth2/v2.0/token",
+  "authentication_endpoint": "/d3d38dff-f85c-4026-842d-c215eb6b3560/oauth2/v2.0/authorize",
+
+  "scopes": "openid fe8b3002-2035-45d9-8d57-a25df9e68c59/.default email profile offline_access",
+
+  "client_id": "fe8b3002-2035-45d9-8d57-a25df9e68c59",
+  "client_secret": "SET MANUALLY",
+  "local_redirect_uri": "/login/oauth2/code/oidc"
+}

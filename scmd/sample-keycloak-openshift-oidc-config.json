@@ -1,0 +1,10 @@
+{
+  "id_provider_url": "http://keycloak.apps.3dev.test.tre.se/auth/realms/sales",
+  "token_endpoint": "/protocol/openid-connect/token",
+  "authentication_endpoint": "/protocol/openid-connect/auth",
+
+  "scopes": "openid email roles profile",
+  "client_id": "returns",
+  "client_secret": "SET MANUALLY",
+  "local_redirect_uri": "/login/oauth2/code/oidc"
+}

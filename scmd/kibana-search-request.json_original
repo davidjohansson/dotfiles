@@ -1,0 +1,76 @@
+{
+  "track_total_hits": false,
+  "sort": [
+    {
+      "@timestamp": {
+        "order": "desc",
+        "unmapped_type": "boolean"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "field": "*",
+      "include_unmapped": "true"
+    },
+    {
+      "field": "@timestamp",
+      "format": "strict_date_optional_time"
+    },
+    {
+      "field": "event.created",
+      "format": "strict_date_optional_time"
+    },
+    {
+      "field": "event.end",
+      "format": "strict_date_optional_time"
+    },
+    {
+      "field": "event.ingested",
+      "format": "strict_date_optional_time"
+    },
+    {
+      "field": "event.logstash_processed_at",
+      "format": "strict_date_optional_time"
+    },
+    {
+      "field": "event.start",
+      "format": "strict_date_optional_time"
+    },
+    {
+      "field": "logstash_processed_at",
+      "format": "strict_date_optional_time"
+    }
+  ],
+  "size": 1000,
+  "version": true,
+  "script_fields": {},
+  "stored_fields": [
+    "*"
+  ],
+  "runtime_mappings": {},
+  "_source": false,
+  "query": {
+    "bool": {
+      "must": [],
+      "filter": [
+        {
+          "range": {
+            "@timestamp": {
+              "format": "strict_date_optional_time",
+              "gte": "2022-04-26T08:00:00.000Z",
+              "lte": "2022-04-27T08:52:01.393Z"
+            }
+          }
+        },
+        {
+          "match_phrase": {
+            "logevent.level": "ERROR"
+          }
+        }
+      ],
+      "should": [],
+      "must_not": []
+    }
+  }
+}
