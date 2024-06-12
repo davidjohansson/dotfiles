@@ -10,8 +10,8 @@ spoon.SpoonInstall:andUse("AppLauncher", {
   hotkeys = {
     c = "Google Chrome",
     p = "1Password",
---    s = "Microsoft Teams (work or school)",
-    s = "Microsoft Teams classic",
+    s = "Microsoft Teams (work or school)",
+--    s = "Microsoft Teams classic",
     t = "iTerm",
     i = "intellij IDEA",
     v = "visual Studio Code",
@@ -19,15 +19,32 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     d = "discord",
     m = "mail",
     f = "Firefox",
+    k = "keymapp",
     x = "dbVisualizer",
-    h = "Hammerspoon",
+    h = "things",
     o = "obsidian",
     k = "Anki",
     g = "figma",
+    w = "Warp",
+    n = "Nebo",
+    b = "Burp Suite Professional",
+
   }
 })
 
--- Cycle currently focused window between available srceens
+hs.hotkey.bind(hyper, 'z', function()
+  local pos = hs.mouse.absolutePosition()
+  print(pos.x)
+  print('eeeo')
+
+  print(pos.y)
+
+  local newPos = hs.geometry.point(-1000, pos.y)
+  hs.mouse.setAbsolutePosition(newPos)
+
+end )
+
+-- Cycle currently focoused window between available srceens
 hs.hotkey.bind(meh, 'g', function()
   -- get the focused window
   local win = hs.window.focusedWindow()

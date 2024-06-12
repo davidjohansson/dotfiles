@@ -9,62 +9,51 @@ zstyle ':completion:*' completer _expand _complete _files _correct _approximate
 
 
 array=(
-api-mock-server
+bff-elgiganten-se
 bff-elgiganten-se-service
 bff-treshop-dk-hazelcast-service
-bff-treshop-dk
+bff-treshop-dk-service
 bif-logistics-partner
-cart-service
-cartrjmx-service
+carts
+cashier-order-service
 checkout
 cia-client
 confirmation
-contract-hazelcast-service
 contract-service
 cops-admin-ui
 cpc
-cpc-admin-ui
 delivery-options
 deploy-assistant
 document-upload-service
 gom
-hazelcast
 hazelcast-management-center
-imdg
 inventory-backlog-service
 minimum-cost
 mom-admin
 mom-engine
 mom-intake
-mom-service
-nginx
 order-info
 orderstatus
-postfix
-price-service
 product-content-treshop-dk
 product-definition
 product-offering-qualification
+product-offering-qualification-hazelcast
 product-search
 product-search-ingester
-rabbitmq
-rabbitmq-nodes
-rabbitmq-service
 retail-checkout
 returns
 returns-bff
 returns-frontend
+sales-bff-treshop-dk
 sales-order-checkout
-salesdb-api
-salesdb-api-service
 salesdb-service
 salesengine
 salesweb
+secure-cluster-proxy
+sosdb-service
 spring-admin-svc
 store-inventory-backend
-store-inventory-cia-client
 store-inventory-frontend
-test2240
 )
 
 # Custom fuzzy completion for "scmd" command
@@ -105,6 +94,19 @@ _fzf_complete_timew() {
 
 _fzf_complete_kbt1() {
   _fzf_complete --multi --reverse --prompt="kbt1> " -- "$@" < <(
+    
+
+   for i in "${array[@]}"
+    do
+      echo "$i"
+    done
+
+  )
+
+}
+
+_fzf_complete_kports() {
+  _fzf_complete --multi --reverse --prompt="kports> " -- "$@" < <(
     
 
    for i in "${array[@]}"

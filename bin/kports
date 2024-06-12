@@ -1,0 +1,2 @@
+#!/bin/bash
+kubectl get service --kubeconfig ~/.kube/config-bt1 -n sales -l app=$1 -o json | jq '.items[] | .spec.ports[] | select(.name == "http" or .name == "management") | {name, port, targetPort}'
